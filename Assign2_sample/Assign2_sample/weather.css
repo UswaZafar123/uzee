@@ -1,0 +1,207 @@
+/* Global Styles */
+
+body {
+    background-image: url('https://img.freepik.com/free-photo/digital-art-dark-cosmic-night-sky_23-2151700780.jpg'); /* Replace with the actual image path */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh; 
+    overflow-x: hidden;
+    transition: background-image 0.5s ease;
+    color: #ffffff; 
+}
+
+
+.neo-card {
+    background: linear-gradient(135deg, #2c2c2c, #232323); 
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 
+                inset 0 4px 15px rgba(255, 255, 255, 0.1); 
+    transition: all 0.3s ease;
+    color: #e0e0e0;
+}
+
+.user-profile{
+  /*reduce size*/
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.neo-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 
+                inset 0 4px 20px rgba(255, 255, 255, 0.15); /* Enhance depth on hover */
+}
+.neo-input {
+    background: #2c2c2c; 
+    border: none;
+    border-radius: 50px;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.7), 
+                inset -5px -5px 15px rgba(255, 255, 255, 0.05); 
+    padding: 15px;
+    color: #ffffff !important; 
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.neo-input::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+
+.neo-input:focus {
+    outline: none;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.9), 
+                inset -5px -5px 10px rgba(252, 252, 252, 0.2); 
+    background: #1a1a1a;
+}
+
+/* Futuristic Neon Button */
+.btn-neo {
+    background: linear-gradient(135deg, #28a745, #219638); 
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 255, 0, 0.5); 
+    transition: all 0.3s ease;
+}
+
+.btn-neo:hover {
+    background: linear-gradient(135deg, #25e843, #1f8433); 
+    transform: translateY(-5px); 
+}
+
+
+#sidebar {
+    background: #1e1e1e !important; 
+    border-right: none;
+    min-width: 250px;
+    height: 100%;
+}
+
+#sidebar img {
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 255, 0, 0.4); 
+    margin-bottom: 20px;
+}
+
+#sidebar h2 {
+    font-weight: 700;
+    color: #ffffff ;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#sidebar a {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 1rem;
+    padding: 15px;
+    display: block;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+#sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1); 
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Weather Widget */
+#weather-widget {
+    background: rgba(0, 0, 0, 0.8); 
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 255, 0, 0.2), 
+                inset 0 4px 15px rgba(255, 255, 255, 0.1); 
+    color: #e0e0e0;
+}
+
+/* Neumorphic Table */
+.neo-table {
+    width: 100%;
+    background-color: #2c2c2c;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 
+                inset 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+.neo-table th, .neo-table td {
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.neo-table th {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+
+.neo-table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.neo-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight neon hover */
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+
+/* Pagination Styling */
+#pagination {
+    text-align: center;
+}
+
+#pagination button {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px;
+    margin: 0 5px;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 255, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#pagination button:hover {
+    background-color: #219638;
+    box-shadow: 0 10px 20px rgba(0, 255, 0, 0.6); /* Neon hover glow */
+}
+
+
+.neo-output {
+    background: rgba(0, 0, 0, 0.8) !important;
+    box-shadow: inset 7px 7px 20px rgba(0, 0, 0, 0.9), 
+                inset -7px -7px 20px rgba(255, 255, 255, 0.05); 
+    color: #ffffff;
+    padding: 15px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .btn-neo {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .chart-section, .neo-card {
+        margin-bottom: 20px;
+    }
+}
